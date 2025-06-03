@@ -161,7 +161,7 @@ const Home = () => {
                   </p>
                   <Link to={slide.buttonLink}>
                     <Button
-                      variant="secondary"
+                      variant="primary"
                       size="lg"
                       icon={slide.buttonLink === '/datos-abiertos' ? <Database size={20} /> : <Users size={20} />}
                     >
@@ -271,7 +271,17 @@ const Home = () => {
       </Section>
 
       {/* Call to Action */}
-      <Section className="text-white text-center" style={{ backgroundImage: `url(${Banner})`, backgroundSize: 'contain' }}>
+      <Section 
+        className="text-white text-center" 
+        style={{
+          backgroundImage: `url(${Banner})`,
+          backgroundSize: 'cover',
+          backgroundRepeat: 'no-repeat',
+          backgroundPosition: 'center',
+          width: '100%',
+          minHeight: '50vh'
+        }}
+      >
         <div className="max-w-3xl mx-auto animate-on-scroll my-6">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">¿Listo para ser parte del cambio?</h2>
           <p className="text-xl mb-8">

@@ -45,13 +45,13 @@ const Footer = () => {
             <h4 className="text-xl font-bold mb-4">Organismos de Apoyo</h4>
             <ul className="space-y-2">
               <li>
-                <a href="https://www.giz.de/" className="text-neutral-300 hover:text-white transition-colors flex items-center gap-1" target="_blank" rel="noopener noreferrer">
-                  GIZ <ExternalLink size={14} />
+                <a href="https://www.bmz.de/en " className="text-neutral-300 hover:text-white transition-colors flex items-center gap-1" target="_blank" rel="noopener noreferrer">
+                  BMZ <ExternalLink size={14} />
                 </a>
               </li>
               <li>
-                <a href="https://www.gfa-group.de/" className="text-neutral-300 hover:text-white transition-colors flex items-center gap-1" target="_blank" rel="noopener noreferrer">
-                  GFA <ExternalLink size={14} />
+                <a href="https://www.giz.de/" className="text-neutral-300 hover:text-white transition-colors flex items-center gap-1" target="_blank" rel="noopener noreferrer">
+                  GIZ <ExternalLink size={14} />
                 </a>
               </li>
               <li>
@@ -69,18 +69,18 @@ const Footer = () => {
           <div>
             <h4 className="text-xl font-bold mb-4">Contacto</h4>
             <ul className="space-y-3">
-              <li className="flex items-start gap-2">
+              {/* <li className="flex items-start gap-2">
                 <MapPin className="text-secondary-500 mt-1 shrink-0" size={18} />
                 <span className="text-neutral-300">Centroamérica: Guatemala, El Salvador, Honduras</span>
-              </li>
+              </li> */}
               <li className="flex items-center gap-2">
                 <Mail className="text-secondary-500 shrink-0" size={18} />
-                <a href="mailto:info@conectadatos.org" className="text-neutral-300 hover:text-white transition-colors">info@conectadatos.org</a>
+                <a href="mailto:info@conectadatos.org" className="text-neutral-300 hover:text-white transition-colors">info@redciudadana.org</a>
               </li>
-              <li className="flex items-center gap-2">
+              {/* <li className="flex items-center gap-2">
                 <Phone className="text-secondary-500 shrink-0" size={18} />
-                <a href="tel:+50322345678" className="text-neutral-300 hover:text-white transition-colors">+503 2234 5678</a>
-              </li>
+                <a href="https://chat.whatsapp.com/FtmG1Qa6bc74cLyBIMPp8d " className="text-neutral-300 hover:text-white transition-colors">Enlace a grupo de whatsapp</a>
+              </li> */}
             </ul>
           </div>
         </div>

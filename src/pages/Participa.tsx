@@ -4,6 +4,7 @@ import Button from '../components/common/Button';
 import Section from '../components/common/Section';
 import Card, { CardContent } from '../components/common/Card';
 import { cn } from '../utils/cn';
+import ContactForm from '../components/common/ContactForm';
 
 interface FAQ {
   question: string;
@@ -135,83 +136,11 @@ const Participa = () => {
 
       {/* Contact Form */}
       <Section 
-        title="Contacto directo" 
-        subtitle="¿Tienes preguntas o comentarios? Escríbenos directamente"
+        title="¿Tienes preguntas o comentarios?" 
+        subtitle="Escríbenos directamente"
         className="bg-neutral-50"
       >
-        <div className="max-w-2xl mx-auto animate-on-scroll">
-          <Card>
-            <CardContent className="p-8">
-              <form>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-                  <div>
-                    <label htmlFor="contact-name" className="form-label">Nombre</label>
-                    <input 
-                      type="text" 
-                      id="contact-name" 
-                      className="form-input" 
-                      placeholder="Tu nombre"
-                      required
-                    />
-                  </div>
-                  <div>
-                    <label htmlFor="contact-email" className="form-label">Correo electrónico</label>
-                    <input 
-                      type="email" 
-                      id="contact-email" 
-                      className="form-input" 
-                      placeholder="tu@email.com"
-                      required
-                    />
-                  </div>
-                </div>
-                
-                <div className="mb-6">
-                  <label htmlFor="subject" className="form-label">Asunto</label>
-                  <input 
-                    type="text" 
-                    id="subject" 
-                    className="form-input" 
-                    placeholder="Asunto de tu mensaje"
-                    required
-                  />
-                </div>
-                
-                <div className="mb-6">
-                  <label htmlFor="contact-message" className="form-label">Mensaje</label>
-                  <textarea 
-                    id="contact-message" 
-                    rows={6} 
-                    className="form-input" 
-                    placeholder="Escribe tu mensaje aquí..."
-                    required
-                  ></textarea>
-                </div>
-                
-                <div className="flex items-center mb-6">
-                  <input 
-                    type="checkbox" 
-                    id="contact-consent" 
-                    className="w-4 h-4 mr-2 accent-primary-500"
-                    required
-                  />
-                  <label htmlFor="contact-consent" className="text-sm text-neutral-700">
-                    Acepto que mis datos sean almacenados y procesados para recibir respuesta a mi consulta
-                  </label>
-                </div>
-                
-                <Button 
-                  variant="primary" 
-                  type="submit"
-                  icon={<Send size={18} />}
-                  fullWidth
-                >
-                  Enviar mensaje
-                </Button>
-              </form>
-            </CardContent>
-          </Card>
-        </div>
+        <ContactForm />
       </Section>
 
       {/* FAQs */}
@@ -248,7 +177,7 @@ const Participa = () => {
             rel="noopener noreferrer" 
             className="inline-flex items-center justify-center px-8 py-4 bg-white text-primary-600 rounded-lg font-medium transition-all duration-200 hover:bg-neutral-100 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary-500"
           >
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="mr-2"><path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21" /><path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1Z" /><path d="M14 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1Z" /><path d="M9.5 13.5c.5 1.5 2.5 2 4 1" /></svg>
+            <svg xmlns=" https://chat.whatsapp.com/FtmG1Qa6bc74cLyBIMPp8d " width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="mr-2"><path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21" /><path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1Z" /><path d="M14 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1Z" /><path d="M9.5 13.5c.5 1.5 2.5 2 4 1" /></svg>
             Unirse al grupo
           </a>
         </div>

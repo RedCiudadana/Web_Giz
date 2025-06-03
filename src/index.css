@@ -190,3 +190,11 @@
 .h-screen2{
   height: 90vh;
 }
+
+.bg-primary-500{
+  background-color: #34589c!important;
+}
+
+.bg-primary-600{
+  background-color: #34589c!important;
+}

@@ -3,6 +3,7 @@ import { Download, ExternalLink, Check } from 'lucide-react';
 import Button from '../components/common/Button';
 import Section from '../components/common/Section';
 import Card, { CardContent, CardHeader, CardFooter } from '../components/common/Card';
+import Banner from '../assets/slider/GIZ_CD-16.png';
 
 const PrincipleCard = ({ number, title, description }: { number: number; title: string; description: string }) => (
   <Card className="animate-on-scroll">
@@ -79,18 +80,26 @@ const DatosAbiertos = () => {
   return (
     <>
       {/* Header */}
-      <div className="pt-32 pb-16 bg-gradient-to-br from-primary-500 to-primary-700 text-white">
-        <div className="container-custom">
-          <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 animate-on-scroll">
-              Datos Abiertos
-            </h1>
-            <p className="text-xl mb-6 animate-on-scroll">
-              Información accesible, utilizable y transformadora para el desarrollo
-            </p>
-          </div>
+      <Section 
+        className="text-white text-center" 
+        style={{
+          backgroundImage: `url(${Banner})`,
+          backgroundSize: 'cover',
+          backgroundRepeat: 'no-repeat',
+          backgroundPosition: 'center',
+          width: '100%',
+          minHeight: '50vh'
+        }}
+      >
+        <div className="max-w-3xl my-24 mx-auto text-center">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 animate-on-scroll">
+            Datos Abiertos
+          </h1>
+          <p className="text-xl mb-6 animate-on-scroll">
+            Información accesible, utilizable y transformadora para el desarrollo
+          </p>
         </div>
-      </div>
+      </Section>
 
       {/* Introduction */}
       <Section>
@@ -105,15 +114,15 @@ const DatosAbiertos = () => {
             </p>
             <ul className="space-y-2 mb-6">
               <li className="flex items-start">
-                <Check size={20} className="text-secondary-500 mt-1 mr-2 shrink-0" />
+                <Check size={20} className="mt-1 mr-2 shrink-0" style={{color:'#4d96cc'}} />
                 <span>Disponibilidad y acceso: deben estar disponibles como un todo y a un costo razonable.</span>
               </li>
               <li className="flex items-start">
-                <Check size={20} className="text-secondary-500 mt-1 mr-2 shrink-0" />
+                <Check size={20} className="mt-1 mr-2 shrink-0" style={{color:'#4d96cc'}}/>
                 <span>Reutilización y redistribución: deben ser provistos bajo términos que permitan reutilizarlos y redistribuirlos.</span>
               </li>
               <li className="flex items-start">
-                <Check size={20} className="text-secondary-500 mt-1 mr-2 shrink-0" />
+                <Check size={20} className="mt-1 mr-2 shrink-0" style={{color:'#4d96cc'}}/>
                 <span>Participación universal: todos deben poder utilizar, reutilizar y redistribuir la información.</span>
               </li>
             </ul>
@@ -221,8 +230,8 @@ const DatosAbiertos = () => {
         <div className="text-center mt-12 animate-on-scroll">
           <Link to="/participa">
             <Button 
-              variant="primary"
-              icon={<ExternalLink size={18} />}
+              icon={<ExternalLink size={18}
+              style={{backgroundColor: '#4d96cc'}} />}
             >
               Comparte tu caso de éxito
             </Button>
@@ -231,7 +240,7 @@ const DatosAbiertos = () => {
       </Section>
 
       {/* Open Data Portals */}
-      <Section 
+      {/* <Section 
         title="Portales de datos abiertos" 
         subtitle="Accede a las fuentes oficiales de datos abiertos en la región"
       >
@@ -257,10 +266,10 @@ const DatosAbiertos = () => {
             url="https://www.ine.gob.gt/"
           />
         </div>
-      </Section>
+      </Section> */}
 
       {/* Key Indicators */}
-      <Section 
+      {/* <Section 
         title="Indicadores clave para monitoreo" 
         subtitle="Parámetros esenciales para evaluar la calidad y uso de los datos abiertos"
         className="bg-neutral-50"
@@ -303,10 +312,10 @@ const DatosAbiertos = () => {
             </tbody>
           </table>
         </div>
-      </Section>
+      </Section> */}
 
       {/* Call to Action */}
-      <Section className="bg-primary-500 text-white text-center">
+      {/* <Section className="bg-primary-500 text-white text-center">
         <div className="max-w-3xl mx-auto animate-on-scroll">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Comienza tu proyecto con datos abiertos</h2>
           <p className="text-xl mb-8">
@@ -332,7 +341,7 @@ const DatosAbiertos = () => {
             </Link>
           </div>
         </div>
-      </Section>
+      </Section> */}
     </>
   );
 };

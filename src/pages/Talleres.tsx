@@ -4,6 +4,7 @@ import Button from '../components/common/Button';
 import Section from '../components/common/Section';
 import Card, { CardContent } from '../components/common/Card';
 import { cn } from '../utils/cn';
+import Banner from '../assets/slider/GIZ_CD-16.png';
 
 interface Event {
   id: number;
@@ -203,35 +204,42 @@ const Talleres = () => {
   return (
     <>
       {/* Header */}
-      <div className="pt-32 pb-16 bg-gradient-to-br from-primary-600 to-primary-800 text-white">
-        <div className="container-custom">
-          <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 animate-on-scroll">
-              Talleres y Recursos
-            </h1>
-            <p className="text-xl mb-6 animate-on-scroll">
-              Fortalece tus capacidades en el uso de datos abiertos con nuestros materiales y capacitaciones
-            </p>
-            <div className="flex flex-wrap justify-center gap-4 animate-on-scroll">
-              <Button 
-                variant="secondary" 
-                size="lg"
-                icon={<Calendar size={20} />}
-              >
-                Ver calendario
-              </Button>
-              <Button 
-                variant="outline" 
-                size="lg"
-                className="border-white text-white hover:bg-white/10"
-                icon={<ExternalLink size={20} />}
-              >
-                Más información
-              </Button>
-            </div>
+      <Section 
+        className="text-white text-center" 
+        style={{
+          backgroundImage: `url(${Banner})`,
+          backgroundSize: 'cover',
+          backgroundRepeat: 'no-repeat',
+          backgroundPosition: 'center',
+          width: '100%',
+          minHeight: '50vh'
+        }}
+      >
+        <div className="max-w-3xl my-24 mx-auto text-center">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 animate-on-scroll">
+           Talleres y Recursos
+          </h1>
+          <p className="text-xl mb-6 animate-on-scroll">
+            Fortalece tus capacidades en el uso de datos abiertos con nuestros materiales y capacitaciones
+          </p>
+          <div className="flex flex-wrap justify-center gap-4 animate-on-scroll">
+            <Button 
+              size="lg"
+              icon={<Calendar size={20} />}
+            >
+              Ver calendario
+            </Button>
+            <Button 
+              variant="outline" 
+              size="lg"
+              className="border-white text-white hover:bg-white/10"
+              icon={<ExternalLink size={20} />}
+            >
+              Más información
+            </Button>
           </div>
         </div>
-      </div>
+      </Section>
 
       {/* Events Calendar */}
       <Section 

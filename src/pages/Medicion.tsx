@@ -1,10 +1,11 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowDown, Download, ExternalLink, Info } from 'lucide-react';
+import { ArrowDown, Download, ExternalLink, Info, Users } from 'lucide-react';
 import Button from '../components/common/Button';
 import Section from '../components/common/Section';
 import Card, { CardContent } from '../components/common/Card';
 import { cn } from '../utils/cn';
+import Banner from '../assets/slider/GIZ_CD-16.png';
 
 interface CountryData {
   id: string;
@@ -115,18 +116,26 @@ const Medicion = () => {
   return (
     <>
       {/* Header */}
-      <div className="pt-32 pb-16 bg-gradient-to-br from-primary-500 to-primary-700 text-white">
-        <div className="container-custom">
-          <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 animate-on-scroll">
-              Medición Regional
-            </h1>
-            <p className="text-xl mb-6 animate-on-scroll">
-              Índice Regional de Datos Abiertos en Centroamérica
-            </p>
-          </div>
+      <Section 
+        className="text-white text-center" 
+        style={{
+          backgroundImage: `url(${Banner})`,
+          backgroundSize: 'cover',
+          backgroundRepeat: 'no-repeat',
+          backgroundPosition: 'center',
+          width: '100%',
+          minHeight: '50vh'
+        }}
+      >
+        <div className="max-w-3xl my-24 mx-auto text-center">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 animate-on-scroll">
+            Medición Regional
+          </h1>
+          <p className="text-xl mb-6 animate-on-scroll">
+            Índice Regional de Datos Abiertos en Centroamérica
+          </p>
         </div>
-      </div>
+      </Section>
 
       {/* Introduction */}
       <Section>
@@ -450,31 +459,31 @@ const Medicion = () => {
       </Section>
 
       {/* Call to Action */}
-      <Section className="bg-primary-500 text-white text-center">
-        <div className="max-w-3xl mx-auto animate-on-scroll">
+      <Section 
+        className="text-white text-center" 
+        style={{
+          backgroundImage: `url(${Banner})`,
+          backgroundSize: 'cover',
+          backgroundRepeat: 'no-repeat',
+          backgroundPosition: 'center',
+          width: '100%',
+          minHeight: '50vh'
+        }}
+      >
+        <div className="max-w-3xl mx-auto animate-on-scroll my-6">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Contribuye a mejorar los datos abiertos</h2>
           <p className="text-xl mb-8">
             Únete al esfuerzo regional para fortalecer el ecosistema de datos abiertos en Centroamérica.
           </p>
-          <div className="flex flex-wrap justify-center gap-4">
-            <Link to="/participa">
-              <Button 
-                variant="secondary"
-                icon={<Download size={18} />}
-              >
-                Únete a la red
-              </Button>
-            </Link>
-            <a href="#" target="_blank" rel="noopener noreferrer">
-              <Button 
-                variant="outline"
-                className="border-white text-white hover:bg-white hover:bg-opacity-10"
-                icon={<ExternalLink size={18} />}
-              >
-                Compartir resultados
-              </Button>
-            </a>
-          </div>
+          <Link to="/participa">
+            <Button 
+              size="lg"
+              icon={<Users size={20} />}
+              style={{border: '1px solid #fff'}}
+            >
+               Únete a la red
+            </Button>
+          </Link>
         </div>
       </Section>
     </>
