@@ -23,7 +23,7 @@ collections:
   create: true
   slug: "{{slug}}"
   fields:
-    - { label: "Título", name: "titulo", widget: "string" }
+    - { label: "Título", name: "title", widget: "string" }
     - { label: "Fecha", name: "fecha", widget: "datetime", date_format: "DD [de] MMMM [de] YYYY", time_format: false }
     - { label: "Tipo de evento", name: "tipo", widget: "select", options: ["Workshop", "Webinar", "Conference"] }
     - { label: "Ubicación", name: "ubicacion", widget: "string" }

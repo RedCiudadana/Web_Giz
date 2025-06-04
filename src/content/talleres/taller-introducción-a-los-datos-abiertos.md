@@ -1,5 +1,5 @@
 ---
-titulo: "Taller: Introducción a los Datos Abiertos"
+title: "Taller: Introducción a los Datos Abiertos"
 fecha: 14 de June de 2025
 tipo: Workshop
 ubicacion: Guatemala, Guatemala
