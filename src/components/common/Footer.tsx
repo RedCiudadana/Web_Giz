@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <footer className="bg-neutral-800 text-white pt-16 pb-8">
       <div className="container-custom">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* About */}
           <div>
             <h4 className="text-xl font-bold mb-4">Conecta Datos</h4>
@@ -41,7 +41,7 @@ const Footer = () => {
           </div>
           
           {/* Organizations */}
-          <div>
+          {/* <div>
             <h4 className="text-xl font-bold mb-4">Organismos de Apoyo</h4>
             <ul className="space-y-2">
               <li>
@@ -63,7 +63,7 @@ const Footer = () => {
             <div className="mt-4">
               <Link to="/participa" className="text-white font-medium hover:text-secondary-500 transition-colors">OSC participantes</Link>
             </div>
-          </div>
+          </div> */}
           
           {/* Contact */}
           <div>
@@ -74,7 +74,7 @@ const Footer = () => {
                 <span className="text-neutral-300">Centroamérica: Guatemala, El Salvador, Honduras</span>
               </li> */}
               <li className="flex items-center gap-2">
-                <Mail className="text-secondary-500 shrink-0" size={18} />
+                <Mail className="text-primary-500 shrink-0" size={18} />
                 <a href="mailto:info@conectadatos.org" className="text-neutral-300 hover:text-white transition-colors">info@redciudadana.org</a>
               </li>
               {/* <li className="flex items-center gap-2">

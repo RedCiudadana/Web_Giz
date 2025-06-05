@@ -42,7 +42,7 @@ const Navbar = () => {
       )}
     >
       <div className="container-custom">
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between my-2">
           {/* Logo */}
           <Link to="/" className="flex items-center" onClick={closeMenu}>
             <img 

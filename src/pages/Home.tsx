@@ -5,7 +5,8 @@ import Button from '../components/common/Button';
 import Section from '../components/common/Section';
 import Card, { CardContent } from '../components/common/Card';
 import { cn } from '../utils/cn';
-import Slider from '../assets/slider/GIZ_CD-05.png';
+import Slider from '../assets/slider/GIZ_CD_03.png';
+import SliderTop from '../assets/slider/GIZ_CD_02.png';
 import Icon1 from '../assets/iconos/GIZ_CD-06.png';
 import Icon2 from '../assets/iconos/GIZ_CD-07.png';
 import Icon3 from '../assets/iconos/GIZ_CD-08.png';
@@ -15,7 +16,7 @@ import Icon6 from '../assets/iconos/GIZ_CD-11.png';
 import Icon7 from '../assets/iconos/GIZ_CD-12.png';
 import Icon8 from '../assets/iconos/GIZ_CD-13.png';
 
-import Logos from '../assets/logos/GIZ_CD-14.png';
+import Logos from '../assets/logos/CINTILLO_GIZ.png';
 
 import Banner from '../assets/slider/GIZ_CD-16.png';
 
@@ -71,7 +72,7 @@ const StatCard = ({ value, label, className, img }: StatCardProps) => (
     style={{display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center'}}
   >
     <img src={img} width={80}/>
-    <h3 className="text-3xl font-bold text-primary-500 mb-2">{value}</h3>
+    <h3 className="text-3xl font-bold text-black my-2">{value}</h3>
     <p className="text-neutral-600 text-center">{label}</p>
   </div>
 );
@@ -173,6 +174,7 @@ const Home = () => {
             </div>
           </div>
         ))}
+        <img src={SliderTop} style={{position:'absolute', bottom:-10, zIndex:'10000'}}/>
         
         {/* Slider Controls */}
         <div className="absolute bottom-8 left-0 right-0 z-30 flex justify-center gap-2">
@@ -204,14 +206,26 @@ const Home = () => {
       </div>
 
       {/* Project Summary */}
-      <Section>
+      <Section className='bg-white'>
         <div className="max-w-4xl mx-auto text-center animate-on-scroll">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Acerca del Proyecto</h2>
           <p className="text-lg text-neutral-700 mb-4">
             Conecta Datos es una iniciativa regional que busca fortalecer las capacidades de las organizaciones de la sociedad civil (OSC) en Centroamérica para utilizar datos abiertos como herramienta de incidencia y monitoreo de políticas públicas.
           </p>
-          <p className="text-lg text-neutral-700">
+          <p className="text-lg text-neutral-700 mb-4">
             A través de formación técnica, asistencia especializada y la creación de una red colaborativa, promovemos la cultura de datos abiertos y la participación ciudadana para impulsar la transparencia y la rendición de cuentas en la región.
+          </p>
+          <p className="text-lg text-neutral-700">
+            Este es un proyecto financiado por el Gobierno Federal
+            de Alemania por medio de la Cooperación Alemana
+            para el Desarrollo GIZ, junto a la Secretaría Ejecutiva
+            del COSEFIN e implementado por Red Ciudadana.
+            Juntos fomentamos el uso estratégico de los datos
+            abiertos en Centroamérica porque los datos abiertos
+            son un motor de innovación, crecimiento económico y
+            desarrollo sostenible. Además, creemos en su
+            capacidad para fortalecer la transparencia fiscal y
+            mejorar la gestión pública.
           </p>
         </div>
       </Section>

@@ -4,12 +4,13 @@ import Button from '../components/common/Button';
 import Section from '../components/common/Section';
 import Card, { CardContent, CardHeader, CardFooter } from '../components/common/Card';
 import Banner from '../assets/slider/GIZ_CD-16.png';
+import Datos1 from '../assets/datos/GIZ_CD-01.png';
 
 const PrincipleCard = ({ number, title, description }: { number: number; title: string; description: string }) => (
   <Card className="animate-on-scroll">
     <CardHeader className="bg-primary-500 text-white">
       <div className="flex items-center gap-3">
-        <span className="flex items-center justify-center w-8 h-8 rounded-full bg-white text-primary-500 font-bold">
+        <span className="flex items-center justify-center w-8 h-8 rounded-full bg-white text-primary-400 font-bold">
           {number}
         </span>
         <h3 className="text-xl font-bold">{title}</h3>
@@ -129,7 +130,7 @@ const DatosAbiertos = () => {
           </div>
           <div className="animate-on-scroll">
             <img 
-              src="https://images.pexels.com/photos/7947782/pexels-photo-7947782.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+              src={Datos1}
               alt="Datos abiertos en acción" 
               className="rounded-lg shadow-lg"
             />
@@ -216,13 +217,13 @@ const DatosAbiertos = () => {
           />
           <SuccessCase 
             title="Transparencia en contrataciones públicas"
-            country="El Salvador"
+            country="Guatemala"
             impact="Reducción de irregularidades en licitaciones mediante el análisis de datos de contrataciones gubernamentales."
             image="https://images.pexels.com/photos/5668473/pexels-photo-5668473.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
           />
           <SuccessCase 
             title="Calidad del servicio de agua potable"
-            country="Honduras"
+            country="Guatemala"
             impact="Mejora en el acceso al agua en comunidades vulnerables gracias al mapeo de datos de cobertura."
             image="https://images.pexels.com/photos/1933239/pexels-photo-1933239.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
           />

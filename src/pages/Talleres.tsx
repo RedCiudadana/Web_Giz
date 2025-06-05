@@ -107,7 +107,7 @@ const EventCard = ({ event }: { event: Event }) => {
         <div className="flex justify-between items-start mb-4">
           <div className="flex items-center text-neutral-600 gap-4">
             <span className="flex items-center gap-2">
-              <Calendar size={16} className="text-primary-600" />
+              <Calendar size={16} className="text-primary-700" />
               {formattedDate}
             </span>
             <span className="flex items-center gap-2 text-sm">
@@ -288,7 +288,7 @@ const TalleresPage = () => {
                 className={cn(
                   "px-4 py-2 text-sm font-medium transition-colors",
                   eventFilter === "all"
-                    ? "bg-primary-600 text-white"
+                    ? "bg-primary-700 text-white"
                     : "text-neutral-700 hover:bg-neutral-200"
                 )}
               >
@@ -299,7 +299,7 @@ const TalleresPage = () => {
                 className={cn(
                   "px-4 py-2 text-sm font-medium transition-colors",
                   eventFilter === "upcoming"
-                    ? "bg-primary-600 text-white"
+                    ? "bg-primary-700 text-white"
                     : "text-neutral-700 hover:bg-neutral-200"
                 )}
               >
@@ -310,7 +310,7 @@ const TalleresPage = () => {
                 className={cn(
                   "px-4 py-2 text-sm font-medium transition-colors",
                   eventFilter === "past"
-                    ? "bg-primary-600 text-white"
+                    ? "bg-primary-700 text-white"
                     : "text-neutral-700 hover:bg-neutral-200"
                 )}
               >

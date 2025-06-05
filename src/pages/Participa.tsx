@@ -5,6 +5,8 @@ import Section from '../components/common/Section';
 import Card, { CardContent } from '../components/common/Card';
 import { cn } from '../utils/cn';
 import ContactForm from '../components/common/ContactForm';
+import Banner from '../assets/slider/GIZ_CD-16.png';
+import Datos2 from '../assets/datos/GIZ_CD-02.png';
 
 interface FAQ {
   question: string;
@@ -66,18 +68,26 @@ const Participa = () => {
   return (
     <>
       {/* Header */}
-      <div className="pt-32 pb-16 bg-gradient-to-br from-primary-500 to-primary-700 text-white">
-        <div className="container-custom">
-          <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 animate-on-scroll">
-              Participa
-            </h1>
-            <p className="text-xl mb-6 animate-on-scroll">
-              Únete a nuestra comunidad y sé parte del cambio con datos abiertos
-            </p>
-          </div>
+      <Section
+        className="text-white text-center"
+        style={{
+          backgroundImage: `url(${Banner})`,
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
+          width: "100%",
+          minHeight: "50vh",
+        }}
+      >
+        <div className="max-w-3xl my-24 mx-auto text-center">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 animate-on-scroll">
+            Participa
+          </h1>
+          <p className="text-xl mb-6 animate-on-scroll">
+            Únete a nuestra comunidad y sé parte del cambio con datos abiertos
+          </p>
         </div>
-      </div>
+      </Section>
 
       {/* Open Call Section */}
       <Section>
@@ -126,7 +136,7 @@ const Participa = () => {
           </div>
           <div className="animate-on-scroll">
             <img 
-              src="https://images.pexels.com/photos/3184405/pexels-photo-3184405.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+              src={Datos2}
               alt="Equipo de trabajo colaborando" 
               className="rounded-lg shadow-lg"
             />
