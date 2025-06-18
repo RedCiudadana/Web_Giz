@@ -212,7 +212,7 @@ const Home = () => {
           <p className="text-lg text-neutral-700 mb-4">
             Conecta Datos es una iniciativa regional que busca fortalecer las capacidades de las organizaciones de la sociedad civil (OSC) en Centroamérica para utilizar datos abiertos como herramienta de incidencia y monitoreo de políticas públicas.
           </p>
-          <p className="text-lg text-neutral-700 mb-4">
+          {/* <p className="text-lg text-neutral-700 mb-4">
             A través de formación técnica, asistencia especializada y la creación de una red colaborativa, promovemos la cultura de datos abiertos y la participación ciudadana para impulsar la transparencia y la rendición de cuentas en la región.
           </p>
           <p className="text-lg text-neutral-700">
@@ -226,7 +226,7 @@ const Home = () => {
             desarrollo sostenible. Además, creemos en su
             capacidad para fortalecer la transparencia fiscal y
             mejorar la gestión pública.
-          </p>
+          </p> */}
         </div>
       </Section>
 

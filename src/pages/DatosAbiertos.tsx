@@ -205,7 +205,7 @@ const DatosAbiertos = () => {
       </Section>
 
       {/* Success Cases */}
-      <Section 
+      {/* <Section 
         title="Casos de éxito" 
         subtitle="Conoce cómo los datos abiertos están generando impacto en Centroamérica"
         className="bg-neutral-50"
@@ -240,7 +240,7 @@ const DatosAbiertos = () => {
             </Button>
           </Link>
         </div>
-      </Section>
+      </Section> */}
 
       {/* Open Data Portals */}
       {/* <Section 

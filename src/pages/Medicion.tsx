@@ -39,7 +39,7 @@ const countries: CountryData[] = [
   },
   {
     id: 'sv',
-    name: 'El Salvador',
+    name: 'República Dominicana',
     score: 59,
     government: 62,
     citizen: 53,
