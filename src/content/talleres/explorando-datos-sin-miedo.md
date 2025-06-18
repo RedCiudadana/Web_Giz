@@ -1,6 +1,6 @@
 ---
 title: "Foro Regional 2: Presentación del Índice"
-fecha: 06 de July de 2025
+fecha: 06 de August de 2025
 tipo: Conference
 ubicacion: Guatemala
 estado: Próximo
