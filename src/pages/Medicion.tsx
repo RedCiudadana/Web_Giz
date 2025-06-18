@@ -143,7 +143,7 @@ const Medicion = () => {
           <div className="animate-on-scroll">
             <h2 className="text-3xl font-bold mb-6">Sobre el índice</h2>
             <p className="text-lg text-neutral-700 mb-4">
-              El Índice Regional de Datos Abiertos es una herramienta de evaluación que mide el estado y avance de las iniciativas de datos abiertos en Guatemala, El Salvador y Honduras.
+              El Índice Regional de Datos Abiertos es una herramienta de evaluación que mide el estado y avance de las iniciativas de datos abiertos en Guatemala, República Dominicana y Honduras.
             </p>
             <p className="text-lg text-neutral-700 mb-4">
               A través de una metodología rigurosa, evaluamos tres dimensiones clave para comprender la calidad, disponibilidad y utilidad de los datos abiertos gubernamentales en la región centroamericana.
@@ -475,7 +475,7 @@ const Medicion = () => {
           <p className="text-xl mb-8">
             Únete al esfuerzo regional para fortalecer el ecosistema de datos abiertos en Centroamérica.
           </p>
-          <Link to="/participa">
+          <a href="https://bit.ly/Convocatoria_Datos_Abiertos_GT_HN_DO" target="_blank">
             <Button 
               size="lg"
               icon={<Users size={20} />}
@@ -483,7 +483,7 @@ const Medicion = () => {
             >
                Únete a la red
             </Button>
-          </Link>
+          </a>
         </div>
       </Section>
     </>
