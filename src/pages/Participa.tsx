@@ -146,11 +146,12 @@ const Participa = () => {
 
       {/* Contact Form */}
       <Section 
-        title="¿Tienes preguntas o comentarios?" 
-        subtitle="Escríbenos directamente"
-        className="bg-neutral-50"
+        // title="¿Tienes preguntas o comentarios?" 
+        // subtitle="Escríbenos directamente"
+        className="bg-neutral-50 m-auto"
       >
-        <ContactForm />
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfQ58m5OKK0oU_RJTS2uf4dhSGPk8D8DHnvk5j47TV8-I46uw/viewform?embedded=true" width="100%" height="3577">Cargando…</iframe>
+        {/* <ContactForm /> */}
       </Section>
 
       {/* FAQs */}
