@@ -157,7 +157,7 @@ const EventCard = ({ event }: { event: Event }) => {
           </div>
         </div>
 
-        <div className="flex items-center gap-3 mt-4">
+        {/* <div className="flex items-center gap-3 mt-4">
           {event.link ? (
             <a
               href={event.link}
@@ -198,7 +198,7 @@ const EventCard = ({ event }: { event: Event }) => {
               <path d="m6 9 6 6 6-6" />
             </svg>
           </button>
-        </div>
+        </div> */}
       </CardContent>
     </Card>
   );
