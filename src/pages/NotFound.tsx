@@ -1,28 +1,29 @@
+import React from 'react';
 import { Link } from 'react-router-dom';
-import { Home } from 'lucide-react';
-import Button from '../components/common/Button';
+import { Home, AlertCircle } from 'lucide-react';
+import Fourofour from '../assets/404.png';
 
 const NotFound = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-neutral-50 p-4">
+    <div className="min-h-screen bg-gray-50 flex flex-col items-center justify-center px-4">
       <div className="text-center">
-        <h1 className="text-9xl font-bold text-primary-500">404</h1>
-        <h2 className="mt-4 text-3xl font-bold tracking-tight sm:text-5xl">
+        <div className="flex justify-center mb-6">
+          <img src={Fourofour} />
+        </div>
+        <h1 className="text-6xl font-bold text-gray-900 mb-4">404</h1>
+        <h2 className="text-3xl font-semibold text-gray-700 mb-6">
           Página no encontrada
         </h2>
-        <p className="mt-6 text-lg leading-7 text-neutral-600">
-          Lo sentimos, la página que estás buscando no existe.
+        <p className="text-xl text-gray-600 mb-8">
+          Lo sentimos, la página que estás buscando no existe o ha sido movida.
         </p>
-        <div className="mt-10">
-          <Link to="/">
-            <Button 
-              variant="primary"
-              icon={<Home size={20} />}
-            >
-              Volver al inicio
-            </Button>
-          </Link>
-        </div>
+        <Link
+          to="/"
+          className="inline-flex items-center px-6 py-3 bg-primary-600 text-white rounded-lg hover:bg-primary-700 transition-colors"
+        >
+          <Home className="w-5 h-5 mr-2" />
+          Volver al inicio
+        </Link>
       </div>
     </div>
   );

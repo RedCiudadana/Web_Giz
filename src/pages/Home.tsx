@@ -174,7 +174,7 @@ const Home = () => {
             </div>
           </div>
         ))}
-        <img src={SliderTop} style={{position:'absolute', bottom:-10, zIndex:'10000'}}/>
+        <img src={SliderTop} style={{position:'absolute', bottom:-10, zIndex:'30'}}/>
         
         {/* Slider Controls */}
         <div className="absolute bottom-8 left-0 right-0 z-30 flex justify-center gap-2">

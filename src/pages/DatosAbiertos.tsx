@@ -5,6 +5,8 @@ import Section from '../components/common/Section';
 import Card, { CardContent, CardHeader, CardFooter } from '../components/common/Card';
 import Banner from '../assets/slider/GIZ_CD-16.png';
 import Datos1 from '../assets/datos/GIZ_CD-01.png';
+import Pdf1 from '../assets/pdf/manual-02_que-son-datos-abiertos-1-.pdf'
+import Pdf2 from '../assets/pdf/manual-01-1-.pdf'
 
 const PrincipleCard = ({ number, title, description }: { number: number; title: string; description: string }) => (
   <Card className="animate-on-scroll">
@@ -187,17 +189,17 @@ const DatosAbiertos = () => {
           <ResourceCard 
             title="Manual de Datos Abiertos"
             description="Guía completa con los conceptos, beneficios y pasos para implementar iniciativas de datos abiertos en tu organización."
-            link="#"
+            link={Pdf1}
           />
           <ResourceCard 
             title="Guía para OSC"
             description="Documento especializado para que organizaciones de la sociedad civil aprovechen los datos abiertos en sus actividades de incidencia."
-            link="#"
+            link={Pdf2}
           />
           <ResourceCard 
             title="Kit de herramientas"
             description="Conjunto de recursos prácticos, plantillas y consejos para trabajar con datos abiertos en proyectos reales."
-            link="#"
+            link="https://datosabiertos.redciudadana.org/transformacion/"
           />
         </div>
       </Section>

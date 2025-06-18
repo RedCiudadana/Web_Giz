@@ -173,7 +173,7 @@ const Participa = () => {
       </Section>
 
       {/* WhatsApp Group */}
-      <Section 
+      {/* <Section 
         className="bg-primary-500 text-white text-center"
       >
         <div className="max-w-3xl mx-auto animate-on-scroll">
@@ -191,7 +191,7 @@ const Participa = () => {
             Unirse al grupo
           </a>
         </div>
-      </Section>
+      </Section> */}
     </>
   );
 };
