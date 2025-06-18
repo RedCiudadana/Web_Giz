@@ -1,6 +1,6 @@
 ---
-title: Explorando datos sin miedo
-fecha: 31 de July de 2025
+title: Con datos también se participa
+fecha: 05 de August de 2025
 tipo: Webinar
 ubicacion: Guatemala
 estado: Próximo
