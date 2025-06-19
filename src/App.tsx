@@ -14,6 +14,7 @@ import Medicion from './pages/Medicion';
 import Talleres from './pages/Talleres';
 import Participa from './pages/Participa';
 import NotFound from './pages/NotFound';
+import ScrollToTop from './components/scrolltotop';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -34,6 +35,7 @@ function App() {
           <img src="https://www.redciudadana.org/assets/img/red/loader.gif" alt="Loading..." className="w-16 h-16" />
         </div>
       )}
+      <ScrollToTop />
       <AnnouncementPopup />
       <Routes>
         <Route path="/" element={<MainLayout />}>

@@ -104,7 +104,7 @@ const Participa = () => {
                 </div>
                 <div>
                   <h3 className="font-bold text-lg">Requisitos</h3>
-                  <p className="text-neutral-600">Ser una OSC legalmente constituida en Guatemala, El Salvador u Honduras con interés en datos abiertos y transparencia.</p>
+                  <p className="text-neutral-600">Ser una OSC legalmente constituida en Guatemala, República Dominicana u Honduras con interés en datos abiertos y transparencia.</p>
                 </div>
               </div>
               <div className="flex items-start">
